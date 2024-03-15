@@ -6,6 +6,9 @@ you must assign the right person to the right drug and return the drug that has 
 
 ```javascript
 Example code:
+function clinicalTrial(patient){
+
+}
 
 ```
 
