@@ -26,3 +26,6 @@ plan:
   step 10 - write out markdown file
 
 ### other ideas:
+
+- board games
+- logic based games
