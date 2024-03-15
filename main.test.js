@@ -1,6 +1,6 @@
 import { expect, test } from "vitest";
 
-import clinicalTrial from "./kata.js";
+import clinicalTrial from "./main.js";
 
 test("Test for patients with allergies", () => {
 	//arrange
