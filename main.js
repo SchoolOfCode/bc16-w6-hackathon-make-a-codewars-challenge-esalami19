@@ -1,40 +1,53 @@
-/*clinical trial drug A and drug B
-drug A is the real one drug B is the placebo.
-we need a function that evenly distributes drug A and B to an array of objects containing different people and their medical information.
-example of array:
-plan:
-DONE step 1 - download packages 
-DONE step 2 - make sure test files are set up with import and export links
-DONE step 3 - set up export shell for function
-DONE step 4 - decide on story that will use logic and conditions 
-step 5 - decide specific pieces of logic for each paitent
-step 6 - flesh out parts of code like array for test
-step 7 - create test that will take array and output array with new assigned drug for each patient and array in string?
-step 8 - create function that will pass first test
-step 9 write two other boundary specific tests
-step 10 - write out markdown file
+/*person obj 
+- array of drugs 
+-specific drug to match person obj 
 
 */
+//if patient has allergies drug a should be assigned to them if they do not have allergies drug b
+// patient1 = {
+// 	name: "Denise Camel",
+// 	age: 29,
+// 	medicalDiagnosis: "healthy",
+// 	allergies: "yes",
+// };
 
-export function clinicalTrial() {}
+export default function clinicalTrial(patient) {
+	if (patient.allergies === "yes") {
+		patient.drug = "a";
+		console.log(patient.drug);
+	} else if (patient.allergies === "no") {
+		patient.drug = "b";
+		console.log(patient.drug);
+	}
+}
 
-testSubjects = [
-	{
-		name: "Denise Camel",
-		age: 29,
-		medicalDiagnosis: "healthy",
-		allergies: "coconut",
-	},
-	{
-		name: "Jimmy Brown",
-		age: 29,
-		medicalDiagnosis: "healthy",
-		allergies: "coconut",
-	},
-	{
-		name: "Harvey Daniel",
-		age: 29,
-		medicalDiagnosis: "healthy",
-		allergies: "coconut",
-	},
-];
+// export default function sum(a, b) {
+// 	return a + b;
+// }
+// export default function clinicalTrial(patient) {
+// 	if (patient.allergies === "yes") {
+// 		patient.drug = "a";
+// 		console.log(`${patient.name} must have drug ${patient.drug}`);
+// 	} else if (patient.allergies === "no") {
+// 		patient.drug = "b";
+// 		console.log(`${patient.name} must have drug ${patient.drug}`);
+// 	}
+// }
+
+// function matchDrug(person) {
+// 	return drug[7];
+// }
+
+// patient2 = {
+// 	name: "Jimmy Brown",
+// 	age: 29,
+// 	medicalDiagnosis: "aneamic",
+// 	allergies: "yes",
+// };
+
+// patient3 = {
+// 	name: "Harvey Daniel",
+// 	age: 29,
+// 	medicalDiagnosis: "high blood pressure",
+// 	allergies: "no",
+// };
